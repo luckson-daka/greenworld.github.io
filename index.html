@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Green World</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="#">Community</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to Green World</h2>
+            <p>Join our community for the latest green living tips and discussions.</p>
+        </section>
+
+        <section>
+            <h2>Featured Articles</h2>
+            <!-- Add your article snippets here -->
+        </section>
+
+        <section>
+            <h2>Shop Green Products</h2>
+            <!-- Add your product listings here -->
+        </section>
+
+        <!-- Login Form -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <form class="login-form" onsubmit="return false;">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button onclick="login()">Login</button>
+            </form>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-container">
+            <h2>Community Comments</h2>
+            <ul id="commentsList"></ul>
+            <form onsubmit="return false;">
+                <input type="text" id="commentInput" placeholder="Add a comment">
+                <button onclick="addComment()">Add Comment</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Green World. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
